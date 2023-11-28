@@ -1,0 +1,49 @@
+:root {
+  --color-gray-100: #656565;
+  --color-blue: #3888c1;
+
+  --font-family: "Nunito", sans-serif;
+
+  --font-md: 18px;
+  --font-xl: 40px;
+
+  --font-bold: 700;
+
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  --border-radius-100: 4px;
+
+  --animation-delay-100: 0.3s;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0 100px;
+  font-family: var(--font-family);
+}
+h1 {
+  font-weight: var(--font-bold);
+  text-align: center;
+  padding: var(--space-xl) 0;
+  font-size: var(--font-xl);
+}
+button {
+  background-color: var(--color-blue);
+  color: white;
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--border-radius-100);
+  font-size: var(--font-md);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  transition: opacity var(--animation-delay-100);
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.7;
+}
+/* Code */
